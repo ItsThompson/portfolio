@@ -1,0 +1,106 @@
+:root {
+    font-size: 16px;
+    font-family: 'Ubuntu Mono', monospace;
+    /* Material Theme Palenight High Contrast */
+    --text-primary: #7F84A1;
+    --text-secondary: #5D91A6;
+    --bg-primary: #292D3E;
+    --bg-secondary: #1B1E2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+footer {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+body {
+    color: black;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #292D3E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #80cbc4;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-item {
+    width: 100%;
+}
+
+.navbar-item:last-child {
+    margin-top: auto;
+}
+
+
+.navbar-link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+
+.intro {
+    margin-left: 5rem;
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+section {
+    height: 100vh;
+    color: black;
+}
+
+section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+}
