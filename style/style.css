@@ -83,6 +83,11 @@ main {
     transition: var(--transition-speed);
 }
 
+.nav-item svg {
+    width: 5rem;
+    height: 5rem;
+}
+
 .nav-link:hover {
     background: var(--bg-secondary);
     color: var(--text-secondary);
