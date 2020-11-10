@@ -1,11 +1,8 @@
 <template>
     <nav class="navbar">
         <ul class="navbar-nav">
-            <li>
-                {{ msg }}
-            </li>
             <li class="logo">
-                <router-link to="/" class="nav-link">
+                <a href="#" class="nav-link">
                     <span class="link-text logo-text">Thompson</span>
                     <svg
                         version="1.1"
@@ -26,11 +23,11 @@
                             />
                         </g>
                     </svg>
-                </router-link>
+                </a>
             </li>
 
             <li class="nav-item">
-                <router-link to="/" class="nav-link">
+                <a href="#" class="nav-link">
                     <svg
                         id="Capa_1"
                         enable-background="new 0 0 512 512"
@@ -44,7 +41,7 @@
                         </g>
                     </svg>
                     <span class="link-text">~/</span>
-                </router-link>
+                </a>
             </li>
 
             <li class="nav-item">
@@ -129,9 +126,6 @@
 <script>
 export default {
     name: "Nav",
-    props: {
-        msg: String,
-    },
 };
 </script>
 

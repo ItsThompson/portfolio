@@ -1,14 +1,13 @@
 <template>
     <div class="home">
-        <Nav msg="Welcome to Your Vue.js App" />
-        <ScrollVideo
-            test="Hello World"
-            video="RetroLoop.mp4"
+        <Nav
+            flag="SLK RM GSZG IZIR, R WIREV UZHG, R'N ZM Z-SLOV"
         />
+        <ScrollVideo msg="Hello World" video="RetroLoop.mp4" />
         <!-- <ScrollVideo msg="Hello World" video="@/assets/RetroLoop.mp4"/> -->
         <main>
             <section>
-                <h1>https://www.youtube.com/watch?v=qGk4E9ss95s</h1>
+                <h1 substitution="ZYXWVUTSRQPONMLKJIHGFEDCBA">https://www.youtube.com/watch?v=qGk4E9ss95s</h1>
             </section>
         </main>
         <footer>
