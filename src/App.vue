@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <router-view />
+    </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    head: {
+        link: [
+            {
+                rel:"stylesheet",
+                href:"https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+            },
+        ],
+    },
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root {
+    font-size: 16px;
+    font-family: "Ubuntu Mono", monospace;
+    /* Material Theme Palenight High Contrast */
+    --text-primary: #7f84a1;
+    --text-secondary: #5d91a6;
+    --bg-primary: #292d3e;
+    --bg-secondary: #1b1e2b;
+    --transition-speed: 600ms;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #292d3e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #80cbc4;
 }
 </style>
