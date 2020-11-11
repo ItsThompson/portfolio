@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 <template>
     <div class="intro">
-        <h1>{{ msg }}</h1>
+        <h1 class="font-weight-bold">
+            {{ msg }}
+        </h1>
         <video :src="require('../assets/' + video)" v-bind:alt="video"></video>
         <!-- <video src="../assets/RetroLoop.mp4"></video> -->
     </div>

@@ -3,7 +3,7 @@
         <Nav
             flag="SLK RM GSZG IZIR, R WIREV UZHG, R'N ZM Z-SLOV"
         />
-        <ScrollVideo msg="Hello World" video="RetroLoop.mp4" />
+        <ScrollVideo msg="Hello World" video="RetroLoop.mp4" /> 
         <!-- <ScrollVideo msg="Hello World" video="@/assets/RetroLoop.mp4"/> -->
         <main>
             <section>
@@ -11,6 +11,7 @@
             </section>
         </main>
         <footer>
+            
             <span
                 >Icons made by
                 <a
@@ -37,6 +38,11 @@ export default {
     components: {
         Nav,
         ScrollVideo,
+    },
+    head: {
+        title: {
+            inner: 'Home'
+        },
     },
 };
 </script>

@@ -3,21 +3,8 @@
         <router-view />
     </div>
 </template>
-
-
-<script>
-export default {
-    head: {
-        title: {
-            inner: 'PogChamp'
-        },
-    },
-};
-</script>
 <style>
 :root {
-    font-size: 16px;
-    font-family: "Ubuntu Mono", monospace;
     /* Material Theme Palenight High Contrast */
     --text-primary: #7f84a1;
     --text-secondary: #5d91a6;
@@ -29,6 +16,8 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 16px;
 }
 
 body {

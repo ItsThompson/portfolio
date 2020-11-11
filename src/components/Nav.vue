@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="logo">
-                <a href="#" class="nav-link">
-                    <span class="link-text logo-text">Thompson</span>
+    <nav class="navbar-custom">
+        <ul class="navbar-nav-custom">
+            <li class="logo-custom">
+                <a href="#" class="nav-link-custom">
+                    <span class="link-text-custom logo-text-custom">Thompson</span>
                     <svg
                         version="1.1"
                         id="Capa_1"
@@ -26,8 +26,8 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item-custom">
+                <router-link to="/" class="nav-link-custom">
                     <svg
                         id="Capa_1"
                         enable-background="new 0 0 512 512"
@@ -40,12 +40,12 @@
                             />
                         </g>
                     </svg>
-                    <span class="link-text">~/</span>
-                </a>
+                    <span class="link-text-custom">~/</span>
+                </router-link>
             </li>
 
-            <li class="nav-item">
-                <router-link to="/" class="nav-link">
+            <li class="nav-item-custom">
+                <router-link to="/projects" class="nav-link-custom">
                     <svg
                         id="Capa_1"
                         enable-background="new 0 0 511.945 511.945"
@@ -82,12 +82,12 @@
                             />
                         </g>
                     </svg>
-                    <span class="link-text">~/Projects</span>
+                    <span class="link-text-custom">~/Projects</span>
                 </router-link>
             </li>
 
-            <li class="nav-item" id="themeButton">
-                <router-link to="/" class="nav-link">
+            <li class="nav-item-custom">
+                <router-link to="/" class="nav-link-custom">
                     <svg
                         version="1.1"
                         id="Capa_1"
@@ -116,7 +116,7 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="link-text">Log In</span>
+                    <span class="link-text-custom">Log In</span>
                 </router-link>
             </li>
         </ul>
@@ -148,7 +148,7 @@ export default {
     }
 }
 
-.navbar {
+.navbar-custom {
     z-index: 1;
     position: fixed;
     background-color: var(--bg-primary);
@@ -156,7 +156,7 @@ export default {
     overflow: scroll;
 }
 
-.navbar-nav {
+.navbar-nav-custom {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -166,15 +166,15 @@ export default {
     height: 100%;
 }
 
-.nav-item {
+.nav-item-custom {
     width: 100%;
 }
 
-.nav-item:last-child {
+.nav-item-custom:last-child {
     margin-top: auto;
 }
 
-.nav-link {
+.nav-link-custom {
     display: flex;
     align-items: center;
     height: 5rem;
@@ -183,42 +183,42 @@ export default {
     transition: var(--transition-speed);
 }
 
-.nav-item svg {
+.nav-item-custom svg {
     width: 5rem;
     height: 5rem;
 }
 
-.nav-link:hover {
+.nav-link-custom:hover {
     background: var(--bg-secondary);
     color: var(--text-secondary);
 }
 
-.nav-link:hover svg {
+.nav-link-custom:hover svg {
     filter: brightness(0) invert(1);
 }
 
-.nav-link:hover .link-text {
+.nav-link-custom:hover .link-text-custom {
     font-size: larger;
 }
 
-.logo:hover svg {
+.logo-custom:hover svg {
     -webkit-animation: spin var(--transition-speed) linear infinite;
     -moz-animation: spin var(--transition-speed) linear infinite;
     animation: spin var(--transition-speed) linear infinite;
 }
 
-.link-text {
+.link-text-custom {
     display: none;
     margin-left: 1rem;
 }
 
-.nav-link svg {
+.nav-link-custom svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
 }
 
-.logo {
+.logo-custom {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -230,40 +230,40 @@ export default {
     width: 100%;
 }
 
-.logo svg {
+.logo-custom svg {
     transform: rotate(0deg);
     filter: brightness(0) invert(1);
     transition: var(--transition-speed);
 }
 
-.logo-text {
+.logo-text-custom {
     display: inline;
     position: absolute;
     left: -999px;
     transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
+.navbar-custom:hover .logo-custom svg {
     transform: rotate(-180deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-    .navbar {
+    .navbar-custom {
         bottom: 0;
         width: 100vw;
         height: 5rem;
     }
 
-    .logo {
+    .logo-custom {
         display: none;
     }
 
-    .navbar-nav {
+    .navbar-nav-custom {
         flex-direction: row;
     }
 
-    .nav-link {
+    .nav-link-custom {
         justify-content: center;
     }
 
@@ -274,25 +274,25 @@ export default {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-    .navbar {
+    .navbar-custom {
         top: 0;
         width: 5rem;
         height: 100vh;
     }
 
-    .navbar:hover {
+    .navbar-custom:hover {
         width: 16rem;
     }
 
-    .navbar:hover .link-text {
+    .navbar-custom:hover .link-text-custom {
         display: inline;
     }
 
-    .navbar:hover .logo svg {
+    .navbar-custom:hover .logo-custom svg {
         margin-left: 11rem;
     }
 
-    .navbar:hover .logo-text {
+    .navbar-custom:hover .logo-text-custom {
         left: 0px;
     }
 }
