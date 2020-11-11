@@ -1,9 +1,9 @@
 <template>
     <a class="card-custom" :href="url" target="_blank">
         <h3 class="header">{{ header }}</h3>
-        <p class="small">
+        <v-clamp autoresize :max-lines="2" class="small">
             {{ content }}
-        </p>
+        </v-clamp>
         <div class="go-corner">
             <div class="go-arrow">
                 →
@@ -13,12 +13,17 @@
 </template>
 
 <script>
+import VClamp from 'vue-clamp';
+
 export default {
     name: "Card",
+    components: {
+        VClamp
+    },
     props: {
         header: String,
         content: String,
-        url: String
+        url: String,
     }
 };
 </script>
@@ -72,7 +77,7 @@ export default {
     z-index: 0;
     overflow: hidden;
 }
-.card-custom:before { 
+.card-custom:before {
     content: "";
     position: absolute;
     z-index: -1;

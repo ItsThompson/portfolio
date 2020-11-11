@@ -6,7 +6,7 @@
             <div class="container">
                 <Card
                     header="thought"
-                    content="A MEAN stack for people to share their thoughts."
+                    content="A MEAN stack for people to share their thoughts. "
                     url="https://github.com/ItsThompson/thought"
                 />
                 <Card
