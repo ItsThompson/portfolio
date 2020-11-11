@@ -32,7 +32,8 @@ export default {
 
 .card-custom {
     transition: all 0.3s ease-out;
-    /* font-size: 16px; */
+    width: 16rem;
+    height: 10rem;
 }
 
 .small {
