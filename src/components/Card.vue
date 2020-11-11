@@ -88,10 +88,12 @@ export default {
 .card-custom:hover:before {
     transform: scale(21);
 }
+
 .card-custom:hover p {
     transition: all 0.3s ease-out;
     color: rgba(255, 255, 255, 0.8);
 }
+
 .card-custom:hover h3 {
     transition: all 0.3s ease-out;
     color: rgba(255, 255, 255, 1);

@@ -2,11 +2,11 @@
     <div class="projects">
         <Nav />
         <main>
-            <h1>Projects</h1>
+            <h1 class="header">Projects</h1>
             <div class="container">
                 <Card
                     header="thought"
-                    content="A MEAN stack social media for people to share their thoughts."
+                    content="A MEAN stack for people to share their thoughts."
                     url="https://github.com/ItsThompson/thought"
                 />
                 <Card
@@ -18,7 +18,7 @@
                     header="dragon"
                     content="Custom discord bot using discord.js"
                     url="https://github.com/ItsThompson/dragon"
-                />
+                /> 
             </div>
         </main>
     </div>
@@ -49,7 +49,7 @@ main {
     padding: 1rem;
 }
 
-.projects h1 {
+.header {
     text-align: center;
 }
 
