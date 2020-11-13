@@ -33,6 +33,7 @@ export default {
 .header {
     color: var(--text-secondary);
     font-size: 1.5rem;
+    text-transform: lowercase;
 }
 
 .card-custom {

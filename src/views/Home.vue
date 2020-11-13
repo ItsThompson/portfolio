@@ -7,7 +7,7 @@
         <!-- <ScrollVideo msg="Hello World" video="@/assets/RetroLoop.mp4"/> -->
         <main>
             <section>
-                <h1 substitution="ZYXWVUTSRQPONMLKJIHGFEDCBA">https://www.youtube.com/watch?v=qGk4E9ss95s</h1>
+                <h1 substitution="ZYXWVUTSRQPONMLKJIHGFEDCBA">okaychamp</h1>
             </section>
         </main>
         <footer>

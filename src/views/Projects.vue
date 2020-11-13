@@ -18,7 +18,17 @@
                     header="dragon"
                     content="Custom discord bot using discord.js"
                     url="https://github.com/ItsThompson/dragon"
-                /> 
+                />
+                <Card
+                    header="blue dragon app"
+                    content="Working with Blue Dragon, We are building a mobile app to help at-risk women."
+                    url="https://github.com/ItsThompson/Blue-Dragon-Assist-App"
+                />
+                <Card
+                    header="portfolio website"
+                    content="A portfolio made with vue.js"
+                    url="https://github.com/ItsThompson/portfolio"
+                />
             </div>
         </main>
     </div>
@@ -51,6 +61,7 @@ main {
 
 .header {
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 .container {

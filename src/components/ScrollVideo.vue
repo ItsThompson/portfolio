@@ -56,7 +56,7 @@ export default {
         //Scenes
         // .addIndicators()
         let scene = new ScrollMagic.Scene({
-            duration: 5000,
+            duration: 8000,
             triggerElement: intro,
             triggerHook: 0,
         })
@@ -72,7 +72,7 @@ export default {
         );
 
         let scene2 = new ScrollMagic.Scene({
-            duration: 1000,
+            duration: 1600,
             triggerElement: intro,
             triggerHook: 0,
         })

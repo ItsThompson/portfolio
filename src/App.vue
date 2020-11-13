@@ -11,6 +11,7 @@
     --bg-primary: #292d3e;
     --bg-secondary: #1b1e2b;
     --transition-speed: 600ms;
+    background-color: #DBDBDB;
 }
 * {
     margin: 0;
@@ -22,7 +23,7 @@
 
 body {
     color: black;
-    background-color: #fff;
+    background-color: #DBDBDB;
     margin: 0;
     padding: 0;
 }
