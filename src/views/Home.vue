@@ -1,17 +1,14 @@
 <template>
     <div class="home">
-        <Nav
-            flag="SLK RM GSZG IZIR, R WIREV UZHG, R'N ZM Z-SLOV"
-        />
-        <ScrollVideo msg="Hello World" video="RetroLoop.mp4" /> 
-        <!-- <ScrollVideo msg="Hello World" video="@/assets/RetroLoop.mp4"/> -->
+        <Nav flag="SLK RM GSZG IZIR, R WIREV UZHG, R'N ZM Z-SLOV" />
+        <NavButton/>
+        <ScrollVideo msg="Hello World" video="RetroLoop.mp4" />
         <main>
             <section>
                 <h1 substitution="ZYXWVUTSRQPONMLKJIHGFEDCBA">okaychamp</h1>
             </section>
         </main>
         <footer>
-            
             <span
                 >Icons made by
                 <a
@@ -31,17 +28,19 @@
 <script>
 // @ is an alias to /src
 import Nav from "@/components/Nav.vue";
+import NavButton from "@/components/NavButton.vue";
 import ScrollVideo from "@/components/ScrollVideo.vue";
 
 export default {
     name: "Home",
     components: {
         Nav,
+        NavButton,
         ScrollVideo,
     },
     head: {
         title: {
-            inner: 'Home'
+            inner: "Home",
         },
     },
 };
@@ -67,5 +66,16 @@ section h1 {
     padding-top: 300px;
     text-align: center;
     font-size: 80px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 </style>
