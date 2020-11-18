@@ -1,6 +1,7 @@
 <template>
     <div class="projects">
-        <Nav />
+        <Nav/>
+        <NavButton/>
         <main>
             <h1 class="header">Projects</h1>
             <div class="container">
@@ -37,12 +38,14 @@
 <script>
 // @ is an alias to /src
 import Nav from "@/components/Nav.vue";
+import NavButton from "@/components/NavButton.vue";
 import Card from "@/components/Card.vue";
 
 export default {
     name: "Home",
     components: {
         Nav,
+        NavButton,
         Card,
     },
     head: {
